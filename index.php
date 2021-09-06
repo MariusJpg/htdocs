@@ -38,8 +38,9 @@
     <p> Marius er 169g høy, Marius er veldig sterk, Marius liker oliven,</p>
     <p> Hvis du vil ha Marius. Kontakt Marius 3Daa G280 Malakoff vgs. </p>
 
-    <h2><a href="oblig2/oblig2.php">oblig2</a></h2>
-    <h3><a href="oblig2/oppg2.php">oppg2</a></h3>
+    <h2><a href="oblig1/oblig2.php">oblig2</a></h2>
+    <h3><a href="oblig1/oppg2.php">oppg2</a></h3>
+    <h4><a href="oblig2/kalkulator.php">Kalkulator</a></h4>
     <a href="https://soundcloud.com/user-843295696">soundcloud</a>
     <a href="mailto:mariusjen@viken.no"> Min Mail </a>
 
