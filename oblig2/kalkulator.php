@@ -10,6 +10,8 @@
         <input type="text" name="name"> Ditt navn<br>
         <input type="text" name="height"> Høyde<br>
         <input type="text" name="weight"> Vekt<br>
+        <input type="radio" name="gender" value="male"> Mann<br>
+        <input type="radio" name="gender" value="female"> Dame<br>
         <input type="submit" value="submit">
 
     </form>
