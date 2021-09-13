@@ -18,24 +18,48 @@ $hoyde  = $_POST["height"];
 $vekt   = $_POST["weight"];
 $kjonn  = $_POST["gender"];
 
+
+
+
 $a = $hoyde;
 $b = $vekt;
 
 $bmi = ($b / ($a * $a))*10000;
 
 
-echo "$bmi";
 
-if ($bmi < 17){
-    echo "$navn, Spis";
+echo round ($bmi,2);
+
+
+
+if ($kjonn ==  "male"){
+
+    if ($bmi < 17){
+        echo "  $navn, Dra til Amerika";
+    }
+    
+    elseif ($bmi >=17 && $bmi<25){
+        echo " $navn, Dra til Amerika";
+    }
+    
+    else {
+        echo " $navn, Har du vudert å begynne med Heroin?";
+    }
 }
 
-elseif ($bmi >=17 && $bmi<25){
-    echo "$navn, Ja";
-}
+if ($kjonn == "female"){
 
-else {
-    echo "$navn, Nei";
+    if ($bmi < 17){
+        echo "  $navn, Spis";
+    }
+    
+    elseif ($bmi >=17 && $bmi<25){
+        echo " $navn, Nice";
+    }
+    
+    else {
+        echo " $navn, Shit stop stop stop";
+    }
 }
 
 ?>
