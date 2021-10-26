@@ -7,10 +7,7 @@
 </head>
 <body>
     <form action="oblig_4.php" method="post" >
-        <input type="text" name="name"> Ditt navn<br>
- 
-
-
+   
         <label for="ganger">Hvor mange ganger skal printen printe?</label>
 
             <select name="ganger" id="ganger">
