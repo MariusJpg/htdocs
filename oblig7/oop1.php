@@ -69,14 +69,8 @@ if (isset($_POST["Clausen"]) && isset($_POST["Marius"]) && isset($_POST["Thomas"
 
 }
 
-
-
-
-
-
-
 ?>
-    </form>
+</form>
 
 
    

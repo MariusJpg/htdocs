@@ -1,0 +1,408 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -1.2000000286102301,
+    "scrollLeft": 0,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "@vuerd/builtin-sql-ddl",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "Kunder",
+        "comment": "",
+        "columns": [
+          {
+            "name": "Navn",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "9edf38d5-ddf0-4972-9b13-c98b28484f90"
+          },
+          {
+            "name": "Adresse",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "b1d1e0ee-d56f-4040-b3c6-115e8f07d463"
+          },
+          {
+            "name": "Kontaktinfo",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 67.04443359375,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "6f41d873-e575-4b08-a954-3afa3673ab15"
+          },
+          {
+            "name": "Type oppdrag",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 81.50439453125,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "f2e383e4-8eda-4149-994c-bfbf08ab882e"
+          },
+          {
+            "name": "ID",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "526fd514-6f65-44fc-bc8e-e105c997cb5e"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 14.6664,
+          "top": 215.7334,
+          "zIndex": 171,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "6c52593b-f92a-4ed4-9701-8c39214ddd67"
+      },
+      {
+        "name": "FAGFOLK",
+        "comment": "",
+        "columns": [
+          {
+            "name": "Navn",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "42199ff7-4442-4844-9cbe-c474a172498f"
+          },
+          {
+            "name": "Kompetansetype",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 99.5634765625,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "8b4a2545-be25-4341-869a-3466fa935e0a"
+          },
+          {
+            "name": "ID",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "86bfa80a-12bd-4839-85b9-1c2e827ed20b"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 487.7334,
+          "top": 223.4667,
+          "zIndex": 178,
+          "widthName": 61.9599609375,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "86024f96-cc31-4d49-b5e6-a468f9cbde1f"
+      },
+      {
+        "name": "Befaring",
+        "comment": "",
+        "columns": [
+          {
+            "name": "Ønsket dato befaring",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 122.68798828125,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "f959d9e4-8d5c-4cf3-917c-d32cf5fcc117"
+          },
+          {
+            "name": "Type anlegg",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 72.83349609375,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "c41559da-68ad-4b9d-8505-fe5acffa8e61"
+          },
+          {
+            "name": "ID",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "ef302645-ab2f-4fe6-9f88-e428bd93e761"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 242,
+          "top": 540.4,
+          "zIndex": 164,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "30ec5b52-bb60-4b2d-8db7-1b22ae900602"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "30ec5b52-bb60-4b2d-8db7-1b22ae900602",
+          "columnIds": [
+            "ef302645-ab2f-4fe6-9f88-e428bd93e761"
+          ],
+          "x": 242,
+          "y": 605.65,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "6c52593b-f92a-4ed4-9701-8c39214ddd67",
+          "columnIds": [
+            "526fd514-6f65-44fc-bc8e-e105c997cb5e"
+          ],
+          "x": 201.218890234375,
+          "y": 387.23339999999996,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_befaring_to_kunder",
+        "visible": true,
+        "id": "5922ae9f-3973-468b-bc77-c780b2ca716b"
+      },
+      {
+        "identification": false,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "30ec5b52-bb60-4b2d-8db7-1b22ae900602",
+          "columnIds": [
+            "ef302645-ab2f-4fe6-9f88-e428bd93e761"
+          ],
+          "x": 656.28857421875,
+          "y": 605.65,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "86024f96-cc31-4d49-b5e6-a468f9cbde1f",
+          "columnIds": [
+            "86bfa80a-12bd-4839-85b9-1c2e827ed20b"
+          ],
+          "x": 683.3154312500001,
+          "y": 353.9667,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_befaring_to_fagfolk",
+        "visible": true,
+        "id": "1564ee2a-3a7a-49a1-91be-9ea108a58346"
+      }
+    ]
+  }
+}
