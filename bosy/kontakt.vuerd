@@ -3,9 +3,9 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": 0,
-    "scrollLeft": 0,
-    "zoomLevel": 1,
+    "scrollTop": -117,
+    "scrollLeft": -177,
+    "zoomLevel": 0.8,
     "show": {
       "tableComment": true,
       "columnComment": true,
@@ -19,7 +19,7 @@
     },
     "database": "MySQL",
     "databaseName": "",
-    "canvasType": "ERD",
+    "canvasType": "@vuerd/builtin-sql-ddl",
     "language": "GraphQL",
     "tableCase": "pascalCase",
     "columnCase": "camelCase",
@@ -49,7 +49,7 @@
           {
             "name": "ID",
             "comment": "",
-            "dataType": "",
+            "dataType": "INT",
             "default": "",
             "option": {
               "autoIncrement": false,
@@ -140,10 +140,10 @@
           }
         ],
         "ui": {
-          "active": true,
-          "left": 36,
-          "top": 97,
-          "zIndex": 71,
+          "active": false,
+          "left": 670.4643,
+          "top": 163.9645,
+          "zIndex": 4,
           "widthName": 60,
           "widthComment": 60
         },
@@ -157,7 +157,7 @@
           {
             "name": "ID",
             "comment": "",
-            "dataType": "",
+            "dataType": "INT",
             "default": "",
             "option": {
               "autoIncrement": false,
@@ -180,13 +180,13 @@
           {
             "name": "Fornavn",
             "comment": "",
-            "dataType": "",
+            "dataType": "VARCHAR",
             "default": "",
             "option": {
               "autoIncrement": false,
               "primaryKey": false,
               "unique": false,
-              "notNull": false
+              "notNull": true
             },
             "ui": {
               "active": false,
@@ -195,7 +195,7 @@
               "pfk": false,
               "widthName": 60,
               "widthComment": 60,
-              "widthDataType": 60,
+              "widthDataType": 64.6005859375,
               "widthDefault": 60
             },
             "id": "b9a2f753-81f6-49a3-8a7f-45ea70a0c8c3"
@@ -203,13 +203,13 @@
           {
             "name": "Etternavn",
             "comment": "",
-            "dataType": "",
+            "dataType": "VARCHAR",
             "default": "",
             "option": {
               "autoIncrement": false,
               "primaryKey": false,
               "unique": false,
-              "notNull": false
+              "notNull": true
             },
             "ui": {
               "active": false,
@@ -218,7 +218,7 @@
               "pfk": false,
               "widthName": 60,
               "widthComment": 60,
-              "widthDataType": 60,
+              "widthDataType": 64.6005859375,
               "widthDefault": 60
             },
             "id": "3913fec3-ee31-4253-893b-c959f076ae01"
@@ -226,13 +226,13 @@
           {
             "name": "Nummer",
             "comment": "",
-            "dataType": "",
+            "dataType": "VARCHAR",
             "default": "",
             "option": {
               "autoIncrement": false,
               "primaryKey": false,
               "unique": false,
-              "notNull": false
+              "notNull": true
             },
             "ui": {
               "active": false,
@@ -241,7 +241,7 @@
               "pfk": false,
               "widthName": 60,
               "widthComment": 60,
-              "widthDataType": 60,
+              "widthDataType": 64.6005859375,
               "widthDefault": 60
             },
             "id": "e8b1822f-5b7a-418d-940e-b641658eb315"
@@ -249,7 +249,7 @@
           {
             "name": "FirmaID",
             "comment": "",
-            "dataType": "",
+            "dataType": "INT",
             "default": "",
             "option": {
               "autoIncrement": false,
@@ -272,14 +272,384 @@
         ],
         "ui": {
           "active": false,
-          "left": 396,
-          "top": 455,
-          "zIndex": 70,
+          "left": 104.9286,
+          "top": 154.2865,
+          "zIndex": 5,
           "widthName": 60,
           "widthComment": 60
         },
         "visible": true,
         "id": "bb8c279a-a5d7-4f3c-8451-029323a02639"
+      },
+      {
+        "name": "Tilbud",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID",
+            "comment": "",
+            "dataType": "TilbudID",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "aeb9610e-a99a-4ace-8d03-1f0f6fc52c3e"
+          },
+          {
+            "name": "KundeID",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "1cbf8fc2-3ff0-4e12-9eb0-953c3ff8f1b3"
+          },
+          {
+            "name": "Kontaktperson",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 85.83349609375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "b3814cfb-ec9c-40c6-aafb-0f26af613530"
+          },
+          {
+            "name": "Dato",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "6a6cb68c-4b87-4806-b0c4-7aae2eb4e754"
+          },
+          {
+            "name": "Referanse",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 61.97900390625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "428e52ba-6c1f-40c1-abe7-cfcdfe18abed"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 327.6072,
+          "top": 393.6779,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "829687da-4d50-42a4-9182-ecc3f167e77c"
+      },
+      {
+        "name": "Produkter",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID",
+            "comment": "",
+            "dataType": "ProdukterID",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 71.36083984375,
+              "widthDefault": 60
+            },
+            "id": "24b2cc9c-abc2-4439-91b8-5d7f29689187"
+          },
+          {
+            "name": "Navn",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "5a7f8165-335d-4f99-8006-82f5b1c57e96"
+          },
+          {
+            "name": "Produktbetegnelse",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 110.41162109375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "c1193748-b433-409e-bb22-f5412160620d"
+          },
+          {
+            "name": "PrisINN",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "5f4ae939-0150-44c9-827e-e43f3da4656e"
+          },
+          {
+            "name": "PrisUT",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "7d6804aa-c426-472d-a461-e31840c2ceb9"
+          },
+          {
+            "name": "LeverandørID",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 81.47900390625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "3d90927d-a3f2-4922-84d9-f2cf77a8d8bb"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1217.3216,
+          "top": 144.1785,
+          "zIndex": 1,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "c96c443c-628a-4e0a-82e5-5c446eec84d4"
+      },
+      {
+        "name": "Tilbudslinjer",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID",
+            "comment": "",
+            "dataType": "ProdukterID",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 71.36083984375,
+              "widthDefault": 60
+            },
+            "id": "e6c1df54-f733-4d44-ac89-e8432e4f036c"
+          },
+          {
+            "name": "ID",
+            "comment": "",
+            "dataType": "TilbudID",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "cd4a6255-406d-4950-ad33-2f2db8621112"
+          },
+          {
+            "name": "Antall",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "5cff0177-87eb-4158-ae83-24dd1baa932c"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1242.25,
+          "top": 461.25,
+          "zIndex": 3,
+          "widthName": 70.87841796875,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "0da711f4-7249-42c5-abc0-8da7cfb6bf2d"
       }
     ],
     "indexes": []
@@ -298,22 +668,152 @@
           "columnIds": [
             "2b4a3a6f-6a47-4ce0-9930-63af68eb6299"
           ],
-          "x": 383,
-          "y": 172.5,
-          "direction": "right"
+          "x": 670.4643,
+          "y": 239.4645,
+          "direction": "left"
         },
         "end": {
           "tableId": "bb8c279a-a5d7-4f3c-8451-029323a02639",
           "columnIds": [
             "474864b4-0e7d-46b2-b932-fcecab8c8a4a"
           ],
-          "x": 569.5,
-          "y": 455,
-          "direction": "top"
+          "x": 456.5291859375,
+          "y": 240.0365,
+          "direction": "right"
         },
         "constraintName": "fk_firmaer_to_personer",
         "visible": true,
         "id": "1b9a6ea0-0348-435b-acc2-4affd64e6a08"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "bb8c279a-a5d7-4f3c-8451-029323a02639",
+          "columnIds": [
+            "af039ae2-77fd-483a-be28-07c5794c7042"
+          ],
+          "x": 280.72889296875,
+          "y": 325.7865,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "829687da-4d50-42a4-9182-ecc3f167e77c",
+          "columnIds": [
+            "1cbf8fc2-3ff0-4e12-9eb0-953c3ff8f1b3"
+          ],
+          "x": 327.6072,
+          "y": 479.4279,
+          "direction": "left"
+        },
+        "constraintName": "fk_personer_to_tilbud",
+        "visible": true,
+        "id": "3f5d678f-55a0-400e-9bb8-596b7a2c6f22"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "154cfc43-ba92-4ff1-b54e-24fef43509eb",
+          "columnIds": [
+            "2b4a3a6f-6a47-4ce0-9930-63af68eb6299"
+          ],
+          "x": 843.9643,
+          "y": 314.9645,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "829687da-4d50-42a4-9182-ecc3f167e77c",
+          "columnIds": [
+            "b3814cfb-ec9c-40c6-aafb-0f26af613530"
+          ],
+          "x": 700.4406960937499,
+          "y": 436.5529,
+          "direction": "right"
+        },
+        "constraintName": "fk_firmaer_to_tilbud",
+        "visible": true,
+        "id": "8c943ee8-3e63-4c95-adab-be7f2198f5ab"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "154cfc43-ba92-4ff1-b54e-24fef43509eb",
+          "columnIds": [
+            "2b4a3a6f-6a47-4ce0-9930-63af68eb6299"
+          ],
+          "x": 1017.4643,
+          "y": 239.4645,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "c96c443c-628a-4e0a-82e5-5c446eec84d4",
+          "columnIds": [
+            "3d90927d-a3f2-4922-84d9-f2cf77a8d8bb"
+          ],
+          "x": 1217.3216,
+          "y": 240.1785,
+          "direction": "left"
+        },
+        "constraintName": "fk_firmaer_to_produkter",
+        "visible": true,
+        "id": "f5aaf2e8-05db-45dd-862c-a657f01543ab"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "c96c443c-628a-4e0a-82e5-5c446eec84d4",
+          "columnIds": [
+            "24b2cc9c-abc2-4439-91b8-5d7f29689187"
+          ],
+          "x": 1421.70783046875,
+          "y": 336.1785,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "0da711f4-7249-42c5-abc0-8da7cfb6bf2d",
+          "columnIds": [
+            "e6c1df54-f733-4d44-ac89-e8432e4f036c"
+          ],
+          "x": 1421.430419921875,
+          "y": 461.25,
+          "direction": "top"
+        },
+        "constraintName": "fk_produkter_to_tilbudslinjer",
+        "visible": true,
+        "id": "8053b07b-9f10-4eaa-84b1-450967ae417d"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "829687da-4d50-42a4-9182-ecc3f167e77c",
+          "columnIds": [
+            "aeb9610e-a99a-4ace-8d03-1f0f6fc52c3e"
+          ],
+          "x": 700.4406960937499,
+          "y": 522.3029,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "0da711f4-7249-42c5-abc0-8da7cfb6bf2d",
+          "columnIds": [
+            "cd4a6255-406d-4950-ad33-2f2db8621112"
+          ],
+          "x": 1242.25,
+          "y": 526.5,
+          "direction": "left"
+        },
+        "constraintName": "fk_tilbud_to_tilbudslinjer",
+        "visible": true,
+        "id": "c491b6e5-bdf8-458b-9d85-4c90a1d05f21"
       }
     ]
   }
