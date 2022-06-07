@@ -7,11 +7,11 @@
 </head>
 <body>
     <form action="connect.php" method="post" >
-        <input type="text" name="Fornavn"> Fornavn<br>
-        <input type="text" name="Etternavn"> Etternavn<br>
-        <input type="text" name="Nummer"> Tlf<br>
-        <input type="text" name="FirmaID"> FirmaID<br>
-        <br>   
+        <input type="text" name="Navn"> Firmanavn<br>
+        <input type="text" name="Orgnr"> Orgnr<br>
+        <input type="text" name="Adresse"> Adresse<br>
+        <br>
+      
         <input type="submit" value="submit">
         <input type="reset" value="reset">
 

@@ -10,10 +10,15 @@
         <input type="text" name="selectNavn"> Navn<br>
         <input type="text" name="selectOrgnr"> Orgnr<br>
         <input type="text" name="selectAdresse"> Adresse<br>
-
-        <input type="submit" value="submit">
+        <br>
+        <input type="text" name="Fornavn"> Fornavn<br>
+        <input type="text" name="Etternavn"> Etternavn<br>
+        <input type="text" name="Nummer"> Tlf<br>
+        <input type="text" name="FirmaID"> FirmaID<br>
+        <br>   
+        <br><input type="submit" value="submit">
         <input type="reset" value="reset">
 
     </form>
 </body>
-</html>
+</html>   
